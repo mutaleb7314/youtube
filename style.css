@@ -92,7 +92,7 @@ nav {
     display: flex;
 }
 
-aside {
+.aside-content aside {
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -120,6 +120,50 @@ aside {
     margin-top: 20px;
 }
 
-.main-container {
-    width: 100%;
+.main-content {
+    max-width: 100%;
+}
+
+main {
+    min-height: 100vh;
+    background: rgb(240, 238, 238);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.card {
+    padding: 10px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar-content {
+    padding-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.content h3 {
+    font-size: 20px;
+}
+
+.chenel-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.content-status {
+    display: flex;
+    font-size: 14px;
+    gap: 10px;
 }
